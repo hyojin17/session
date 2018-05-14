@@ -1,0 +1,8 @@
+<form action="/home/create" method="post">
+  <!--토큰-->
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  제목: <input type="title" name="post_title"><br>
+  내용: <input type="text" name="post_content"><br>
+  <input type="submit" value="작성하기">
+</form>
+<!--구글에서html form tag해서 가져옴.-->
